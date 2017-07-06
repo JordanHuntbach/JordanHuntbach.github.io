@@ -15,13 +15,13 @@ var paddle2Y = 300;
 var player1Score = 0;
 var player2Score = 0;
 var paused = true;
-var BASE_BALL_SPEED = 5;
+var BASE_BALL_SPEED = 4;
 
 const WINNING_SCORE = 5;
 const Y_MODIFIER = 2;
 const PADDLE_X_BUFFER = 50;
 const BALL_RADIUS = 5;
-const AI_MAX_SPEED = 8;
+const AI_MAX_SPEED = 10;
 const PADDLE_HEIGHT = 100;
 const PADDLE_WIDTH = 10;
 const PADDLE1X = PADDLE_X_BUFFER + PADDLE_WIDTH;
@@ -110,6 +110,8 @@ function move() {
 		return;
 	}
 	moveAI();
+	ballX += ballSpeedX;
+	ballY += ballSpeedY;
 	if(ballX >= (canvas.width - BALL_RADIUS)){
 		player1Score++;
 		ballReset();
@@ -132,8 +134,7 @@ function move() {
 		ballSpeedY = -ballSpeedY;
 	}
 
-	ballX += ballSpeedX;
-	ballY += ballSpeedY;
+
 }
 
 function colourRect(leftX, topY, width, height, colour) {
