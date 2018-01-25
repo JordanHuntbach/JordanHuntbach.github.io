@@ -1,5 +1,7 @@
 $(document).ready(function(){
     var canvas = $('#gameCanvas')[0];
+    canvas.width = window.innerWidth - 14;
+    canvas.height = window.innerHeight - 50;
     var canvasContext = canvas.getContext('2d');
     var ballX = 400;
     var ballSpeedX = 5;
