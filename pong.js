@@ -27,12 +27,12 @@ function calculateMousePos(event) {
     var mouseX = event.clientX - rect.left - root.scrollLeft;
     var mouseY = event.clientY - rect.top - root.scrollTop;
     return {
-        x:mouseX,
-        y:mouseY
+    x:mouseX,
+    y:mouseY
     };
 }
 
-function handleMouseClick(event) {
+function handleMouseClick() {
     if(paused){
         paused = false;
         player1Score = 0;
@@ -45,17 +45,13 @@ window.onload = function() {
     canvasContext = canvas.getContext('2d');
     canvasContext.font = "20px sans-serif";
     var frames = 60;
-    setInterval(
-        function() {
-            move();
-            draw();
-        }, 1000/frames);
+    setInterval(update, 1000/frames);
     canvas.addEventListener('mousedown', handleMouseClick);
     canvas.addEventListener('mousemove',
-        function(event) {
-            var mousePos = calculateMousePos(event);
-            paddle1Y = mousePos.y - (PADDLE_HEIGHT/2);
-        });
+                            function(event) {
+                            var mousePos = calculateMousePos(event);
+                            paddle1Y = mousePos.y - (PADDLE_HEIGHT/2);
+                            });
 };
 
 function update() {
@@ -100,10 +96,10 @@ function move() {
     moveAI();
     ballX += ballSpeedX;
     ballY += ballSpeedY;
-    if(ballX >= (canvas.width - BALL_RADIUS)){
+    if(ballX >= (canvas.width - (2 * BALL_RADIUS))){
         player1Score++;
         ballReset();
-    } else if(ballX <= (0 + BALL_RADIUS)){
+    } else if(ballX <= (2 * BALL_RADIUS)){
         player2Score++;
         ballReset();
     } else if((PADDLE1X + ballSpeedX <= ballX) & (ballX <= PADDLE1X) & (paddle1Y <= ballY) & (ballY <= paddle1Y + PADDLE_HEIGHT)) {
@@ -117,8 +113,8 @@ function move() {
         ballSpeedY = Y_MODIFIER * delta;
         BASE_BALL_SPEED += 0.2
     }
-
-    if (ballY >= (canvas.height - BALL_RADIUS) || ballY <= (0 + BALL_RADIUS)) {
+    
+    if (ballY >= (canvas.height - (2 * BALL_RADIUS)) || ballY <= (2 * BALL_RADIUS)) {
         ballSpeedY = -ballSpeedY;
     }
 }
@@ -161,6 +157,6 @@ function draw() {
     //right paddle
     colourRect(PADDLE2X, paddle2Y, PADDLE_WIDTH, PADDLE_HEIGHT, 'white');
     //scores
-    canvasContext.fillText(player1Score, 100, 100);
-    canvasContext.fillText(player2Score, canvas.width - 100, 100);
+    canvasContext.fillText(player1Score.toString(), 100, 100);
+    canvasContext.fillText(player2Score.toString(), canvas.width - 100, 100);
 }
