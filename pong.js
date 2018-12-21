@@ -31,7 +31,8 @@ $(document).ready(function(){
         function(event) {
             var mousePos = calculateMousePos(event);
             paddle1Y = mousePos.y - (PADDLE_HEIGHT/2);
-        });
+        }
+    );
 
     function calculateMousePos(event) {
         var rect = canvas.getBoundingClientRect();

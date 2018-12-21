@@ -1,18 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<!--
+  _____   _       ______             _____  ______
+ |  __ \ | |     |  ____|    /\     / ____||  ____|
+ | |__) || |     | |__      /  \   | (___  | |__
+ |  ___/ | |     |  __|    / /\ \   \___ \ |  __|
+ | |     | |____ | |____  / ____ \  ____) || |____
+ |_|     |______||______|/_/    \_\|_____/ |______|
+
+  _    _  _____  _____   ______
+ | |  | ||_   _||  __ \ |  ____|
+ | |__| |  | |  | |__) || |__
+ |  __  |  | |  |  _  / |  __|
+ | |  | | _| |_ | | \ \ | |____
+ |_|  |_||_____||_|  \_\|______|
+
+  __  __  ______
+ |  \/  ||  ____|
+ | \  / || |__
+ | |\/| ||  __|
+ | |  | || |____
+ |_|  |_||______|
+
+-->
+
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
         <title>Jordan Huntbach</title>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <link rel="stylesheet" href="style.css">
+
+        <!-- JAVASCRIPT PLUGINS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+
+        <!-- JAVASCRIPT -->
+        <script src="index.js"></script>
+
+        <!-- STYLESHEETS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css" type="text/css" />
     </head>
+
     <body>
-        <h1>Welcome to my homepage</h1>
-        <h2>About Me</h2>
-        <p> I'm currently studying Computer Science at Durham University, and am interested in persuing a career in Cyber Security upon graduation. </p>
-        <br>
-        <h2>Games</h2>
-        <a href="pong.html">Click here</a> to play pong.
+        <!-- HERO IMAGE -->
+        <div id="hero" class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1 class="display-4">Jordan Huntbach</h1>
+                <p class="lead">Finalist computer science student from Durham University with an excellent academic record.
+                    <br>Looking for a graduate position; available to start from July 2019 onwards.</p>
+                <button id="getInTouch" class="btn btn-outline-light" onclick="contact()">Get in Touch</button>
+
+            </div>
+        </div>
+
+        <!--<div class="container">-->
+            <!--<nav class="navbar sticky-top navbar-expand-sm navbar-dark bg-dark">-->
+                <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarList" aria-controls="navbarList" aria-expanded="false" aria-label="Toggle navigation">-->
+                    <!--<span class="navbar-toggler-icon"></span>-->
+                <!--</button>-->
+                <!--<div class="collapse navbar-collapse" id="navbarList">-->
+                    <!--<div class="navbar-nav">-->
+                        <!--<a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>-->
+                        <!--<a class="nav-item nav-link" href="#">Education</a>-->
+                        <!--<a class="nav-item nav-link" href="#">Projects / Coursework</a>-->
+                        <!--<a class="nav-item nav-link disabled" href="#">Games</a>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</nav>-->
+        <!--</div>-->
+
+        <!-- MAIN CONTENT -->
+        <div id="contact"  class="hidden jumbotron jumbotron-fluid">
+            <div class="container">
+
+                <div class="row" style="display: inline-block">
+                    <div class="LI-profile-badge"  data-version="v1" data-size="large" data-locale="en_US" data-type="vertical" data-theme="light" data-vanity="jordan-huntbach"><a class="LI-simple-link" href='https://uk.linkedin.com/in/jordan-huntbach?trk=profile-badge'>Jordan Huntbach</a></div>
+                </div>
+
+                <div class="row my-2" style="text-align: center">
+                    <div class="col">
+                        <a href="mailto:jordanhuntbach@gmail.com">jordanhuntbach@gmail.com</a>
+                    </div>
+                </div>
+
+                <div class="row my-2" style="text-align: center">
+                    <div class="col">
+                        <h6>+44 7538 299653</h6>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </body>
 </html>
 
