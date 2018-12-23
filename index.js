@@ -1,5 +1,5 @@
 $(document).ready(
-    alert("This page is a work in progress, and largely unavailable at the moment.")
+    alert("This page is a work in progress, check back soon for more content :)")
 );
 
 function contact(){
