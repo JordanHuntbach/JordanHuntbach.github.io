@@ -1,5 +1,11 @@
-# JordanHuntbach.github.io
+This is the repository for my blog at https://jordanhuntbach.github.io.
 
-Welcome to my home page!
+## Development
 
-https://jordanhuntbach.github.io
+This project uses Jekyll, a static site generator written in Ruby.
+
+To test the site locally, run:
+```bash
+bundle install
+bundle exec jekyll serve
+```
