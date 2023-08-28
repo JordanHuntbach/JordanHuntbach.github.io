@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Hello World!"
-date:   2023-08-27 16:13:10 +0100
+date:   2023-08-27
 categories: [meta]
 ---
 Hello, welcome to my blog.
