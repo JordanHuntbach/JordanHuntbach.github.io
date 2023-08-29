@@ -4,21 +4,22 @@ title:  "About me"
 date:   2023-08-28
 categories: [personal]
 ---
-I was thinking about what to write in the 'about me' section for this blog, and considered the following sections:
+I was thinking about what to write in the 'about me' section for this blog, and considered the following topics:
 * Things I enjoy
 * Things I believe
 * Things I think about a lot
 
-However, I realised that what I write there won't be confined to a single blog post with a timestamp, it will stand out 
-in its own section until I come back and change it, which I don't expect to do frequently. 
-I'll cover those topics in this post instead, so that I can keep that section more general.
+However, I realised that these things are subject to change, and what I write in that section won't be confined to a
+single blog post with a timestamp, it will stand out until I come back and change it, which I don't expect to do 
+frequently. Using a post to cover the above means I can keep the 'about me' section more general and update it with a 
+new post whenever my interests change. It also means I get my first blog post out of the way, which is nice.
 
 ## Things I enjoy
 
 ### Video Games
 
 I probably could have put this one in the 'about me' section, I have considered myself a 'gamer' for as long as I can
-remember.
+remember. A family friend gave us his old PlayStation 1 when we were little, and I have owned every PlayStation since.
 
 Some of my favourite games: 
 * The Last of Us
@@ -42,23 +43,29 @@ Some books I've read recently that I would recommend:
 * Homo Deus - Yuval Noah Harari
 
 Some books on my to-read list:
-* Some of Isaac Asimov's work
+* Isaac Asimov
 * American Gods - Neil Gaiman
 
 ### Cooking
 
+After university, I moved to Leeds for my first job and lived there for a year on my own (before moving home as the COVID 
+lockdowns hit in 2020). Living on my own meant I had to cook for myself every night of the week - there wasn't anyone 
+else that I could share this chore with. I also had the money to buy decent equipment, and the time to slow down and 
+pay attention to each step of the recipes I was making. I started sharpening my knives, trying new recipes, and found 
+enjoyment in cooking, rather than just seeing it as a necessary part of feeding myself.
+
 ## Things I believe
 
-Within the next 50 years ASI will have been created, and aging will have been cured. This gives us an almost infinite
-amount of time for an almost infinitely intelligent system to advance everything about our lives. This gives rise to 
-several other cool beliefs, for instance I will:
-* live to be thousands of years old.
-* live in a post-scarcity world where AI provides everything that we currently spend money on for little or no cost.
-* have the time and the means to visit every country on Earth.
-* step foot on another planet, potentially even another solar system.
-* fly a space-ship one day.
-* have sex in zero-gravity.
-* learn a myriad of new skills, including scuba diving, flying a plane, freestyle skiing, wing-suit flying, etc.
+Within the next 50 years ASI will have been created, and aging will have been cured. 
+This gives us an almost infinite amount of time for an inconceivably intelligent system to advance everything about
+our lives, which is why I will:
+* live to be thousands of years old
+* live in a post-scarcity world where AI provides everything that we currently spend money on for little or no cost
+* have the time and the means to visit every country on Earth
+* step foot on another planet, potentially even another solar system
+* fly a space-ship one day
+* have sex in zero-gravity
+* learn a bunch of new skills, including scuba diving, flying a plane, freestyle skiing, wing-suit flying, etc.
 
 ## Things I spend a lot of time thinking about
 
