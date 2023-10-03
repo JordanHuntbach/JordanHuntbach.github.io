@@ -1,0 +1,20 @@
+---
+layout: post
+title:  "Pac-Man - Part 1: The Game"
+date:   2023-10-03
+categories: [pacman]
+---
+
+# Posts in this series
+<ul>
+  {% assign posts = site.categories.pacman | reverse %}
+  {% for post in posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
+
+# Introduction
+
+.. to be continued ..

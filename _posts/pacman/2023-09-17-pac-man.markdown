@@ -1,0 +1,42 @@
+---
+layout: post
+title:  "Pac-Man - Part 0: Introduction"
+date:   2023-09-17
+categories: [pacman]
+---
+
+My university dissertation was titled 'Augmenting Tree Search with Neural Networks in an AI Agent for Pac-Man'. 
+You can view it [here](https://raw.githubusercontent.com/JordanHuntbach/PacMan/master/dissertation.pdf). 
+As part of this work I recreated the game itself, then designed and developed an AI agent to play it.
+
+My dissertation accounted for 1/3rd of the marks of my final year at university, 
+and I spent a huge amount of time working on it.
+Even so, looking back on the code quality of the game, the final performance of the AI agent, and the methods I used, 
+I'm not particularly proud of the results.
+
+In the years since I graduated, I've often reflected on this project and wondered how much better I'd be able to do
+now that I have so much experience as a developer.
+
+It's been over 4 years since then, and I've worked at two different companies in that time. 
+I've decided to revisit Pac-Man with the following goals.
+
+1. Re-implement the game.
+  - The code quality should be up to my current standards.
+  - The game should be a more faithful recreation of the original.
+  - The game should be more performant.
+2. Re-implement the AI agent.
+  - I cut corners in the original design, partly due to the course deadlines and partly due to my inexperience. 
+    I want to do it properly this time. Trying again with the original design, I'd like to see if I can make a better agent.
+3. Experiment with new agent designs.
+  - I'm going to try some different designs and see if I can come up with anything that beats the previous approach.
+  - I'd also like to implement some state of the art models and see if they're able to play the game, including a GPT model.
+
+# Posts in this series
+<ul>
+  {% assign posts = site.categories.pacman | reverse %}
+  {% for post in posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
