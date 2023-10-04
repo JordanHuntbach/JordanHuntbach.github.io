@@ -40,7 +40,7 @@ In the new version of the game I've followed the description from [The Pac-Man D
 much more closely, implemented tiles and perfectly recreated Pac-Man's movement. Not only does this make the new version
 a more faithful recreation, but it also makes the game much more performant.
 
-Additional details the were skipped in my previous implementation, but have been recreated now:
+Additional details that were skipped in my previous implementation, but have been recreated now:
 * fruits occasionally appear on the map and award the player bonus points if they can be collected within a 
 short time limit. 
 * Pac-Man pauses for 1 frame after eating each dot
