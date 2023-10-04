@@ -6,7 +6,7 @@ categories: [pacman]
 ---
 
 My university dissertation was titled 'Augmenting Tree Search with Neural Networks in an AI Agent for Pac-Man'. 
-You can view it [here](https://raw.githubusercontent.com/JordanHuntbach/PacMan/master/dissertation.pdf). 
+You can view it [here](/assets/dissertation.pdf). 
 As part of this work I recreated the game itself, then designed and developed an AI agent to play it.
 
 My dissertation accounted for 1/3rd of the marks of my final year at university, 

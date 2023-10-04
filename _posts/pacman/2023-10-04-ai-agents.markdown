@@ -1,0 +1,46 @@
+---
+layout: post
+title:  "Pac-Man - Part 2: AI Agents"
+date:   2023-10-04
+categories: [pacman]
+---
+
+# Posts in this series
+<ul>
+  {% assign posts = site.categories.pacman | reverse %}
+  {% for post in posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
+
+# Monte-Carlo Tree Search
+
+Please read sections 2.A and 3.B of my [dissertation](/assets/dissertation.pdf) for a detailed explanation of the 
+Monte-Carlo Tree Search algorithm and how I implemented it in the previous version.
+
+Reviewing this work now, it strikes me that a drawback of this approach is that each node of the tree represents a 
+game state where Pac-Man is at a junction in the maze. This means that at no point in the game will Pac-Man start off
+in one direction and then turn around and reverse course before reaching the next junction; however, this is a common
+maneuver in my gameplay, so it seems like a handicap if the AI agent isn't able to do the same.
+
+I also don't want every edge between nodes to represent a single frame of movement, as this would create a 
+very large (deep) tree. I need to strike a trade-off between granularity and computational efficiency. 
+
+Here are some options:
+* **Junction-Based Nodes**: As mentioned, using junctions as nodes in the MCTS tree is a common approach. 
+Each time Pac-Man reaches a junction, a new node is created. 
+This approach simplifies the tree's structure and can lead to more meaningful decisions since junctions are 
+critical decision points in the game, but has the drawbacks already mentioned. 
+
+* **Fixed-Length Segments**: Instead of creating a node for each pixel of movement, I could create nodes for 
+fixed-length segments of the path, for example, every 5 frames, 10 pixels of movement. 
+This approach reduces the tree's size compared to frame/pixel-level granularity while still allowing 
+for some flexibility in decision-making.
+
+* **Dynamic Segments**: We may consider node boundaries dynamically based on the game state.
+For instance, if Pac-Man is approaching a junction, create a node there. 
+If a ghost is nearby, create nodes more frequently to allow for more responsive decision-making. 
+Dynamic segmentation allows the AI to adapt to the game's, but would require some manual heuristics from us to 
+determine. When to create new nodes in the tree.
