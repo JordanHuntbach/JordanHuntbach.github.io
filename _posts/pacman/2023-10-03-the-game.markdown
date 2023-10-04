@@ -20,6 +20,8 @@ categories: [pacman]
 I re-implemented the game from scratch, using [The Pac-Man Dossier by Jamey Pittman](https://pacman.holenet.info) as 
 a reference. 
 
+![pac-man.png](/assets/pacman-game.png)
+
 ### Implementation Details
 
 Pac-Man is a tile based game. Each tile is 8 x 8 pixels, and the maze is 28 x 36 tiles. 
